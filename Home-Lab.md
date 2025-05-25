@@ -14,7 +14,7 @@ A proposta é entender na prática como funciona uma infraestrutura segmentada e
 
 <h2>🗺️ Topologia da Rede</h2>
 
-<a href="https://imgur.com/a/e4oUy4A" target="_blank">Clique aqui para visualizar a topologia da rede.</a></br></br>
+<a href="https://imgur.com/a/e4oUy4A"><img src="https://imgur.com/a/e4oUy4A" /></a>
 
 <b>🌐 Descrição da Topologia:</b></br>
 - O <b>OPNsense</b> faz a interligação entre as redes internas (VLANs) e a internet (WAN).</br>
