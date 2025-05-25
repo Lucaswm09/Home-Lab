@@ -1,0 +1,63 @@
+# 🔐 Home Lab de Segurança
+
+## 🎯 Objetivo do Projeto
+
+Este projeto tem como objetivo criar um home lab de segurança de redes, simulando um ambiente corporativo com firewall, segmentação em VLANs e monitoramento de segurança.  
+
+A proposta é entender na prática como funciona uma infraestrutura segmentada e protegida, aplicando conceitos essenciais de redes e cibersegurança.  
+
+### Componentes do laboratório:
+- 🔥 **Firewall OPNsense** – Controle de tráfego, roteamento entre VLANs e aplicação de regras de segurança.
+- 🖥️ **Servidor Ubuntu Server** – Hospeda o Wazuh (SIEM) e seu banco de dados, simulando um servidor corporativo.
+- 💻 **Host Windows 11** – Simula uma estação de trabalho de um usuário comum conectado na rede de usuários.
+
+---
+
+## 🗺️ Topologia da Rede
+
+> https://imgur.com/a/e4oUy4A 
+
+### 🌐 Descrição da Topologia:
+- O **OPNsense** faz a interligação entre as redes internas (VLANs) e a internet (WAN).
+- Três VLANs são configuradas para segmentação:
+  - **VLAN 10 – Rede de usuários** (Windows 11)
+  - **VLAN 20 – Rede de servidores** (Ubuntu + Wazuh)
+  - **VLAN 99 – Rede de gerenciamento** (Rede de acesso para ADMs)
+- A interface WAN conecta o ambiente à internet via NAT e DHCP.
+
+---
+
+## 🧠 Descrição dos Componentes
+
+| Dispositivo        | Função                 | IP              | VLAN   | Descrição                                  |
+|--------------------|------------------------|-----------------|--------|---------------------------------------------|
+| OPNsense (WAN)     | Firewall (Internet)    | DHCP ou estático| -      | Conexão externa                            |
+| OPNsense (LAN)     | Gateway VLAN 10        | 192.168.10.1    | VLAN 10| Rede de usuários                           |
+| OPNsense (SERV)    | Gateway VLAN 20        | 192.168.20.1    | VLAN 20| Rede de servidores                         |
+| OPNsense (MGMT)    | Gateway VLAN 99        | 192.168.99.1    | VLAN 99| Rede de gerenciamento                      |
+| Windows 11         | Estação de trabalho    | 192.168.10.2    | VLAN 10| Usuário comum                               |
+| Ubuntu Server      | Servidor com Wazuh     | 192.168.20.2    | VLAN 20| Servidor para SIEM (Wazuh)                 |
+
+---
+
+## 🚧 Importância da Segmentação em VLANs
+
+Segmentar a rede utilizando VLANs é uma prática fundamental em segurança da informação. Além de organizar a rede, isso impede que dispositivos de diferentes funções se comuniquem diretamente sem passar pelo firewall, elevando significativamente o nível de segurança.  
+
+### 🔑 Benefícios da segmentação:
+- ✅ Isolamento das redes (usuários, servidores e gerenciamento).
+- ✅ Dificulta movimentações laterais em caso de um ataque.
+- ✅ Permite aplicar regras específicas para cada rede.
+- ✅ Reduz a superfície de ataque.
+- ✅ Facilita o monitoramento e a gestão da rede.
+
+---
+
+## 🛡️ Aplicações na Segurança da Informação
+
+Este home lab permite colocar em prática vários conceitos importantes de redes e segurança:  
+- Configuração de firewall e roteamento entre VLANs.
+- Controle de tráfego interno e externo.
+- Aplicação de políticas de segurança para cada segmento.
+- Monitoramento de eventos, geração de alertas e análise de segurança utilizando um SIEM (**Wazuh**).
+- Simulação de cenários reais de ambientes corporativos.
