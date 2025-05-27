@@ -9,6 +9,7 @@ A proposta é entender na prática como funciona uma infraestrutura segmentada e
 🔥 <b>Firewall OPNsense</b> – Controle de tráfego, roteamento entre VLANs e aplicação de regras de segurança.</br>
 🖥️ <b>Servidor Ubuntu Server</b> – Hospeda o Wazuh (SIEM) e seu banco de dados, simulando um servidor corporativo.</br>
 💻 <b>Host Windows 11</b> – Simula uma estação de trabalho de um usuário comum conectado na rede de usuários.</br>
+💻🖥️🔥 <b>Gerenciador de Máquinas Virtuais</b> – Software que agregra e manipula todas as VM's citadas acima</br>
 
 ---
 
