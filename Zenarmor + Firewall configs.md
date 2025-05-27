@@ -4,7 +4,7 @@
 
 <b>1️⃣ Proxy (Squid):</b>
 
-Definir políticas de acesso à web, bloqueios, autenticação e filtragem.
+Definir políticas de acesso à web.
 
 <b>2️⃣ Regras de Firewall – Usuários (VLAN 10):</b>
 
