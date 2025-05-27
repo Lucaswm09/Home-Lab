@@ -110,6 +110,3 @@ Este home lab permite colocar em prática vários conceitos importantes de redes
 - Aplicação de políticas de segurança para cada segmento.</br>
 - Monitoramento de eventos, geração de alertas e análise de segurança utilizando um SIEM (<b>Wazuh</b>).</br>
 - Simulação de cenários reais de ambientes corporativos.</br>
-
-EM ANDAMENTO...
----
