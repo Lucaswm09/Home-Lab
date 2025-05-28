@@ -38,7 +38,7 @@ As regras aplicadas na VLAN 10 têm como objetivo garantir que os dispositivos d
 
 A VLAN 20, destinada aos servidores, tem regras mais restritivas para garantir a segurança do ambiente.
 
-<a href="https://imgur.com/a/J6U0vwQ"><img src="https://i.imgur.com/bnnRU0J.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/a/J6U0vwQ"><img src="https://i.imgur.com/in5ZG7y.png" title="source: imgur.com" /></a>
 
 <h2>⚙️ Zenarmor</h2>
 O Zenarmor é um plugin moderno de inspeção de tráfego (Next-Gen Firewall) integrado ao OPNsense, que oferece visibilidade detalhada, controle granular e proteção avançada para a rede.<br><br>
