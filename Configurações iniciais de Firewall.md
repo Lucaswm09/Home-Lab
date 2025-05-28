@@ -32,13 +32,13 @@ Será utilizado o serviço de proxy Squid, disponível no OPNsense, para control
 
 As regras aplicadas na VLAN 10 têm como objetivo garantir que os dispositivos dos usuários acessem apenas o necessário, com segurança e controle.
 
-<a href="https://imgur.com/a/nPP88IR"><img src="https://i.imgur.com/JLJU5iD.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/a/J6U0vwQ"><img src="https://i.imgur.com/eqWLNv1.png" title="source: imgur.com" /></a>
 
 <h2>🖥️ Firewall Rules – VLAN 20 (Servidores)</h2>
 
 A VLAN 20, destinada aos servidores, tem regras mais restritivas para garantir a segurança do ambiente.
 
-<a href="https://imgur.com/a/nPP88IR"><img src="https://i.imgur.com/uak77jv.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/a/J6U0vwQ"><img src="https://i.imgur.com/bnnRU0J.png" title="source: imgur.com" /></a>
 
 <h2>⚙️ Zenarmor</h2>
 O Zenarmor é um plugin moderno de inspeção de tráfego (Next-Gen Firewall) integrado ao OPNsense, que oferece visibilidade detalhada, controle granular e proteção avançada para a rede.<br><br>
